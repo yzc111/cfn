@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>人机系统标注系统</display-name>
+  <servlet>
+    <description>Get requirest,and to separate sentence with NLPIR</description>
+    <display-name>Use to separate sentence</display-name>
+    <servlet-name>SeparationSentenceServlet</servlet-name>
+    <servlet-class>com.servlet.SeparationSentenceServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>FIND</description>
+    <display-name>find sentence</display-name>
+    <servlet-name>Sentencefind</servlet-name>
+    <servlet-class>com.servlet.Sentencefind</servlet-class>
+  </servlet>
+  <servlet>
+    <description>return the mark of part of speech given by jsp</description>
+    <display-name>Get Part Of Speech Mark</display-name>
+    <servlet-name>GetPOSMarkServlet</servlet-name>
+    <servlet-class>com.servlet.GetPOSMarkServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>return the target word of the given sentence</description>
+    <display-name>Get Target Word</display-name>
+    <servlet-name>GetTargetServlet</servlet-name>
+    <servlet-class>com.servlet.GetTargetServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>get the final result and update database</description>
+    <display-name>Get the marked result</display-name>
+    <servlet-name>SubmitResultServlet</servlet-name>
+    <servlet-class>com.servlet.SubmitResultServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>return the result of matching the username and the password</description>
+    <display-name>Get the user's inputed username and password</display-name>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <servlet-class>com.servlet.UserLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Logout the current user</description>
+    <display-name>Logout the current user</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>return the current user's information including  including all kinds of count</description>
+    <display-name>Get the current user information</display-name>
+    <servlet-name>GetUserInfoServlet</servlet-name>
+    <servlet-class>com.servlet.GetUserInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Add the new lexicalunit and return the candidate frame</description>
+    <display-name>Add the new lexicalunit</display-name>
+    <servlet-name>GetCandidateFrameServlet</servlet-name>
+    <servlet-class>com.servlet.GetCandidateFrameServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Add the new Lexicalunit to library</description>
+    <display-name>Add the new Lexicalunit</display-name>
+    <servlet-name>AddNewLexicalunitServlet</servlet-name>
+    <servlet-class>com.servlet.AddNewLexicalunitServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>com.servlet.TestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetFrameInformationWithID</servlet-name>
+    <servlet-class>com.servlet.GetFrameInformationWithID</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetRandomSentenceServlet</servlet-name>
+    <servlet-class>com.servlet.GetRandomSentenceServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RegisteredUser</servlet-name>
+    <servlet-class>com.servlet.RegisteredUser</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ChangeMarkedSentenceServlet</servlet-name>
+    <servlet-class>com.servlet.ChangeMarkedSentenceServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetCommonFEServlet</servlet-name>
+    <servlet-class>com.servlet.GetCommonFEServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetUserAuditServlet</servlet-name>
+    <servlet-class>com.servlet.GetUserAuditServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteSentenceServlet</servlet-name>
+    <servlet-class>com.servlet.DeleteSentenceServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetFrameListServlet</servlet-name>
+    <servlet-class>com.servlet.GetFrameListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetLockFrameServlet</servlet-name>
+    <servlet-class>com.servlet.GetLockFrameServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Public Analysis Sentence</description>
+    <display-name>Public Analysis Sentence</display-name>
+    <servlet-name>NBServlet</servlet-name>
+    <servlet-class>com.servlet.NBServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Public Analysis Sentence</description>
+    <display-name>Public Analysis Sentence</display-name>
+    <servlet-name>LoadImageServlet</servlet-name>
+    <servlet-class>com.servlet.LoadImageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Public Analysis Sentence</description>
+    <display-name>Public Analysis Sentence</display-name>
+    <servlet-name>WCSRedirectServlet</servlet-name>
+    <servlet-class>com.servlet.WCSRedirectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Public Analysis Sentence</description>
+    <display-name>Public Analysis Sentence</display-name>
+    <servlet-name>DownLoadSoft</servlet-name>
+    <servlet-class>com.servlet.DownLoadSoft</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UploadHandleServlet</servlet-name>
+    <servlet-class>me.gacl.web.controller.UploadHandleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadHandleServlet</servlet-name>
+    <url-pattern>/servlet/UploadHandleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DownLoadServlet</servlet-name>
+    <servlet-class>me.gacl.web.controller.DownLoadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DownLoadServlet</servlet-name>
+    <url-pattern>/servlet/DownLoadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>delete</servlet-name>
+    <servlet-class>me.gacl.web.controller.delete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delete</servlet-name>
+    <url-pattern>/servlet/delete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ListFileServlet</servlet-name>
+    <servlet-class>me.gacl.web.controller.ListFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListFileServlet</servlet-name>
+    <url-pattern>/servlet/ListFileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SeparationSentenceServlet</servlet-name>
+    <url-pattern>/servlet/SeparationSentenceServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Sentencefind</servlet-name>
+    <url-pattern>/servlet/Sentencefind</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetPOSMarkServlet</servlet-name>
+    <url-pattern>/servlet/GetPOSMarkServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetTargetServlet</servlet-name>
+    <url-pattern>/servlet/GetTargetServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SubmitResultServlet</servlet-name>
+    <url-pattern>/servlet/SubmitResultServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <url-pattern>/servlet/UserLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/servlet/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetUserInfoServlet</servlet-name>
+    <url-pattern>/servlet/GetUserInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetCandidateFrameServlet</servlet-name>
+    <url-pattern>/servlet/GetCandidateFrameServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddNewLexicalunitServlet</servlet-name>
+    <url-pattern>/servlet/AddNewLexicalunitServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/servlet/TestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetFrameInformationWithID</servlet-name>
+    <url-pattern>/servlet/GetFrameInformationWithID</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetRandomSentenceServlet</servlet-name>
+    <url-pattern>/servlet/GetRandomSentenceServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisteredUser</servlet-name>
+    <url-pattern>/servlet/RegisteredUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeMarkedSentenceServlet</servlet-name>
+    <url-pattern>/servlet/ChangeMarkedSentenceServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetCommonFEServlet</servlet-name>
+    <url-pattern>/servlet/GetCommonFEServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetUserAuditServlet</servlet-name>
+    <url-pattern>/servlet/GetUserAuditServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteSentenceServlet</servlet-name>
+    <url-pattern>/servlet/DeleteSentenceServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetFrameListServlet</servlet-name>
+    <url-pattern>/servlet/GetFrameListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetLockFrameServlet</servlet-name>
+    <url-pattern>/servlet/GetLockFrameServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NBServlet</servlet-name>
+    <url-pattern>/servlet/NBServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoadImageServlet</servlet-name>
+    <url-pattern>/patchca.png</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WCSRedirectServlet</servlet-name>
+    <url-pattern>/servlet/WCSRedirectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownLoadSoft</servlet-name>
+    <url-pattern>/servlet/DownLoadSoft</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>assianno.jsp</welcome-file>
+  </welcome-file-list>
+  <listener>
+    <listener-class>com.servlet.NBServlet</listener-class>
+  </listener>
+</web-app>

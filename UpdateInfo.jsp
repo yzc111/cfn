@@ -1,0 +1,250 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<base href="<%=basePath%>">
+
+<title>更新说明</title>
+<link rel="icon" href="./img/logo.ico"/>
+<link rel="shortcut icon" href="./img/logo.ico"/> 
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="This is my page">
+<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+
+</head>
+
+<body>
+	<div align="right">
+		<a href=".">&lt;back</a>
+	</div>
+	<h1>更新说明</h1>
+	<ul>
+	<li>
+		<div>
+			<h2>8月16日更新说明</h2>
+			<ul>
+				<li>
+					<dl>
+						<dt>
+							修复了在审核意见界面无法修改例句的BUG。
+						</dt>
+						<dd>
+							对于标注不规范的例句，在进行修改的时候可能会出现无法修改的BUG。如果遇到这种情况，请将用户名、例句发送至QQ：332909900.
+						</dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+	</li>
+	<li>
+		<div>
+			<h2>7月31日更新说明</h2>
+			<ul>
+				<li>
+					<dl>
+						<dt>修复了首页版权信息可能会遮挡框架列表的BUG。</dt>
+					</dl>
+				</li>
+			</ul>
+		</div>
+	</li>
+	<li>
+		<div>
+			<h2>7月30日更新说明</h2>
+			<ul>
+			<li>
+				<dl>
+					<dt>首页底部增加版权信息说明</dt>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt>用户信息页面增加下载管理软件的链接</dt>
+				</dl>
+			</li>
+			</ul>
+		</div>
+	</li>
+	<li>
+		<div>
+			<h2>7月24日更新说明</h2>
+			<ul>
+				<li>
+					<dl>
+						<dt>新增还原功能。</dt>
+						<dd>还原功能：将当前框架的标注结果还原到初始状态（即，只标注了目标词的状态），该操作仅会对当前框架的标注结果产生影响。</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>修复在标注了框架元素融合或是有定的零形式下，系统不能正确给出无定的框架元素候选项的BUG。</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>提交例句后，系统会进行规范性检查，如果遇到标注不规范的句子，会终止例句提交过程，并提示用户标注不规范的句子。(正确标注的情况下，如遇到系统阻止提交，请迅速联系QQ：332909900)</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>更新howtouse说明。</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>修复了标注支撑词时，系统提交例句后不能正确对支撑词的格式进行规范化的BUG。</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>系统在获取当前框架的框架元素时，增加Loading提示。</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>修复了修改例句时，系统不能正确获取已标例句中的支撑词的BUG。</dt>
+					</dl>
+				</li>
+			</ul>
+		</div>
+	</li>
+	<li>
+		<div>
+			<h2>7月20日更新说明</h2>
+			<ul>
+				<li>
+					<dl>
+						<dt>
+							优化修改例句时服务器行为，保证URL地址的统一。
+						</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							自动登录时取消登录成功的提示。
+						</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>优化标注界面设计。</dt>
+						<dd>
+							增加部分分割线，使整个页面显得更加有序。
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>为所有页面增加“CFN”的logo。
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>用户登录时，增加回车事件响应。</dt>
+						<dd>输入用户名后按下回车，密码框将获得焦点；输入密码后按下回车，会进行登录操作。
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>修改例句后，会在工作框中显示“加载中，请稍后...”的提示，直到加载完例句信息。</dt>
+					</dl>
+				</li>
+				
+			</ul>
+		</div>
+	</li>
+		<li>
+			<div>
+				<h2>7月17日更新说明</h2>
+				<ul>
+					<li>
+						<dl>
+							<dt>用户信息界面增加了对需要重新标注的例句的提示。</dt>
+							<dd>已入库的例句，需要重新标注时，会在用户的个人信息中增加星号提示。</dd>
+							<dd><font color="red">NOTE 该提示仅限于那些从已入库的例句中退回的例句，不包括还未通过审核的例句。</font></dd>
+						</dl>
+						<dl>
+							<dt>用户信息界面增加显示例句状态。</dt>
+							<dd>例句状态目前分为两类：待审核、已入库。</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li>
+			<div>
+				<h2>7月5日更新说明</h2>
+				<ul>
+					<li>
+						<dl>
+							<dt>修复了修改例句时的BUG</dt>
+							<dd>对于某些例句点击修改后，未能正常显示之前标注结果的BUG进行了修复。(如果还未能正确显示，请先确认该条例句标注结果是否规范。)</dd>
+							<dd>同时，对于有歧义的框架例句进行修改时，不能正确找到目标词的BUG进行了修复。</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>标注例句框中的短语类型与句法功能的中文名后面加入了简写说明。</dt>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>删除已标注例句时，会进行一次提示，确认后即可删除。</dt>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>页面代码进行了加密。</dt>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li>
+			<div>
+				<h2>6月25日更新说明</h2>
+				<ul>
+					<li>
+						<dl>
+							<dt>修复了无法获取系统例句的BUG</dt>
+							<dd>现在可以正常获取系统例句。</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li>
+			<div>
+				<h2>6月24日更新说明</h2>
+				<ul>
+					<li>
+						<dl>
+							<dt>优化了修改已标注例句的操作。</dt>
+							<dd>现在在个人信息界面点击修改按钮跳转回主界面后，如果不需要修改分词结果，点击当前要修改的框架，会给出之前的标注结果，同时其他框架会给出只标注了目标词的标注结果。如果需要更改分词结果，在跳转回主界面后，直接修改标注区域中的分词结果后，确认分词结果就可以。</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>主界面中移除审核意见框。</dt>
+							<dd>审核意见可以在个人的审核信息中查看。</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</body>
+</html>

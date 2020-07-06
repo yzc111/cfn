@@ -1,0 +1,8 @@
+DataBaseURL=jdbc\:sqlserver\://115.24.12.89\:1433;DatabaseName\=CFNdatabase
+JDBCDriver=com.microsoft.sqlserver.jdbc.SQLServerDriver
+username=cfnadmin
+password=cfn@SQL2008R2
+DataBaseURL2=jdbc\:sqlserver\://115.24.12.89\:1433;DatabaseName\=CFNSentence
+JDBCDriver2=com.microsoft.sqlserver.jdbc.SQLServerDriver
+username2=cfnadmin
+password2=cfn@SQL2008R2

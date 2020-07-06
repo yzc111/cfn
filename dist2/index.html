@@ -1,0 +1,49 @@
+<!DOCTYPE html><html>
+<head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>cfn</title><link href=./static/css/app.5a8505f573e718202e603836614963a0.css rel=stylesheet></head>
+<body>
+
+<script>
+function getCookie(cname){
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i].trim();
+		if (c.indexOf(name)==0) { return c.substring(name.length,c.length); }
+	}
+	return "";
+}
+function checkCookie(){
+	var x = document.cookie;
+	var user=getCookie("username");	
+	
+	if (user!=""){			
+	}
+	else {
+
+		window.location.href = "../assianno.jsp";		
+
+	}
+	document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+}
+</script>
+
+<body onload = "checkCookie()">
+
+<script type=text/javascript src = "../dist/js/jquery-2.12.js">
+
+
+</script>
+
+<script type=text/javascript src=./static/js/log.js></script>
+<div id=app>
+</div><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js>
+</script>
+<script type=text/javascript src=./static/js/vendor.52a8c62dfc051a928026.js></script>
+<script type=text/javascript src=./static/js/app.9a91eab295cef0351ee6.js></script>
+
+
+
+
+<div id=app></div><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.52a8c62dfc051a928026.js></script><script type=text/javascript src=./static/js/app.2a07dd99d16205a64108.js></script></body></html>
